@@ -1,0 +1,109 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+}
+
+ion-icon{
+    cursor: pointer;
+}
+
+/*
+**hero
+*/
+
+.hero__container{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+
+    .green__bg{
+        height: 100%;
+        width: 60%;
+        position: relative;
+
+        .green_nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-inline-start: 2.5rem;
+            // position: absolute;
+            // top: 0;
+            // left: 0;
+
+            .logo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // gap: .rem;
+
+                img{
+                    width: 4rem;
+                    height: 4rem;
+                    object-fit: cover;
+                }
+                h3{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+            }
+
+            .nav_menu{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+
+                li{
+                    list-style-type: none;
+                    font-weight: 600;
+                    font-size: .9rem;
+                }
+            }
+        }
+        .green_hero_content{
+            border: 1px solid red;
+            width: 100%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding-inline-start: 5rem;
+
+            h3{
+                font-size: 4rem;
+                font-weight: 600;
+                width: 70%;
+
+                span{
+                    color: goldenrod;
+                }
+            }
+            p{
+                width: 58%;
+                font-weight: 600;
+                padding-block: 1.2rem;
+            }
+            #hero-btn{
+                padding: .2rem 1rem;
+                background: goldenrod;
+                font-size: 1.2rem; 
+                color: #fff;
+            }
+        }
+    }
+}
