@@ -1,6 +1,9 @@
 import { IonIcon } from "@ionic/react";
 import { arrowForward, starOutline } from "ionicons/icons";
 import Button from "./button";
+import large from '../images/roberto-nickson-rEJxpBskj3Q-unsplash.jpg';
+import small from '../images/lissete-laverde-7jOeRc0dOWs-unsplash.jpg';
+import reviewer from '../images/reviews/rev4.jpeg'
 
 
 
@@ -8,9 +11,9 @@ const Awards = () => {
     return ( 
         <div className="awards_contaainer">
             <div className="gallery">
-                <img src="" alt="large" />
+                <img src={large} alt="large" />
                 <div className="right">
-                    <img src="" alt="small" />
+                    <img src={small} alt="small" />
                     <div className="review">
                         <div className="top">
                             <span className="dash"></span>
@@ -18,7 +21,7 @@ const Awards = () => {
                         </div>
                         <div className="bottom">
                             <div className="left">
-                                <img src="" alt="reviewer" />
+                                <img src={reviewer} alt="reviewer" />
                                 <span>Lisa O.</span>
                             </div>
                             <div className="right">

@@ -1,4 +1,6 @@
-
+import van from '../images/icons/van.png';
+import quality from '../images/icons/quality.png';
+import warranty from '../images/icons/badge.png';
 
 
 const Icon = ({source, title, content}) => {
@@ -23,17 +25,17 @@ const Icons = () => {
             </div>
             <div className="icons_container">
                 <Icon
-                    source=""
+                    source={quality}
                     title="Best Quality"
                     content="All of our furniture uses the best materials and choices for our customers"
                 />
                 <Icon 
-                    source=""
+                    source={van}
                     title="Free Shipping"
                     content="Free shiping everytime you buy furniture from us without exeption"
                 />
                 <Icon
-                    source=""
+                    source={warranty}
                     title="Warranty"
                     content="Every time you buy our funiture products you will get a warranty without exception" 
                 />

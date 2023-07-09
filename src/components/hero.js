@@ -2,6 +2,8 @@ import { IonIcon } from "@ionic/react";
 import { arrowForwardSharp, bagOutline, playCircle } from 'ionicons/icons'
 import Button from "./button";
 import React, { useState } from "react";
+import leaves from '../images/icons/leaves.png';
+import hero from '../images/collov-home-design-H-1j_s0dhCw-unsplash.jpg'
 
 
 
@@ -17,7 +19,7 @@ const Hero = () => {
             <div className="green__bg">
                 <div className="green_nav">
                     <div className="logo">
-                        <img src="" alt="logo" />
+                        <img src={leaves} alt="logo" />
                         <h3>Interio</h3>
                     </div>
                     <ul className="nav_menu">
@@ -53,7 +55,7 @@ const Hero = () => {
                 <div className="hero_image_cont">
                     <div className="box"></div>
                     <div className="image">
-
+                        <img src={hero} alt="hero" />
                     </div>
                     <Button> Watch video <IonIcon icon={playCircle} /></Button>
                 </div>
