@@ -22,21 +22,22 @@ ion-icon {
 */
 .hero__container {
   width: 100%;
-  height: 100dvh;
+  height: 98dvh;
   display: flex;
   align-items: center;
 }
 .hero__container .green__bg {
   height: 100%;
-  width: 60%;
+  width: 67%;
   position: relative;
+  background: rgb(11, 53, 49);
+  color: #fff;
 }
 .hero__container .green__bg .green_nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  -webkit-padding-start: 2.5rem;
-          padding-inline-start: 2.5rem;
+  padding-inline: 2.5rem;
 }
 .hero__container .green__bg .green_nav .logo {
   display: flex;
@@ -57,15 +58,19 @@ ion-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 .hero__container .green__bg .green_nav .nav_menu li {
   list-style-type: none;
   font-weight: 600;
   font-size: 0.9rem;
+  cursor: pointer;
+}
+.hero__container .green__bg .green_nav .nav_menu li:hover {
+  transition: color 0.05s ease;
+  color: rgb(255, 190, 11);
 }
 .hero__container .green__bg .green_hero_content {
-  border: 1px solid red;
   width: 100%;
   height: 80%;
   display: flex;
@@ -81,7 +86,7 @@ ion-icon {
   width: 70%;
 }
 .hero__container .green__bg .green_hero_content h3 span {
-  color: goldenrod;
+  color: rgb(255, 190, 11);
 }
 .hero__container .green__bg .green_hero_content p {
   width: 58%;
@@ -93,4 +98,64 @@ ion-icon {
   background: goldenrod;
   font-size: 1.2rem;
   color: #fff;
+}
+.hero__container .cream__bg {
+  background: rgb(250, 237, 205);
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.hero__container .cream__bg .cream_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  -webkit-padding-end: 4rem;
+          padding-inline-end: 4rem;
+  padding-block: 1rem;
+}
+.hero__container .cream__bg .cream_nav :nth-last-child(1) {
+  font-size: 1.5rem;
+}
+.hero__container .cream__bg .cream_nav #down {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__container .cream__bg .cream_nav #down #ion {
+  font-size: 0.8rem;
+}
+.hero__container .cream__bg .cream_nav li {
+  list-style-type: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.hero__container .cream__bg .cream_nav li:hover {
+  transition: color 0.05s ease;
+  color: rgb(255, 190, 11);
+}
+.hero__container .cream__bg .hero_image_cont {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  -webkit-padding-end: 3rem;
+          padding-inline-end: 3rem;
+  position: relative;
+}
+.hero__container .cream__bg .hero_image_cont .image {
+  width: 38rem;
+  height: 25rem;
+  border-radius: 15px;
+}
+.hero__container .cream__bg .hero_image_cont .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
 }/*# sourceMappingURL=app.css.map */

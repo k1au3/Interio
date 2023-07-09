@@ -1,9 +1,9 @@
 import { IonIcon } from "@ionic/react";
-import { arrowForwardSharp, bagOutline, playCircle } from 'ionicons/icons'
+import { arrowForwardSharp, bagOutline, chevronDownOutline, playCircle } from 'ionicons/icons'
 import Button from "./button";
 import React, { useState } from "react";
 import leaves from '../images/icons/leaves.png';
-import hero from '../images/collov-home-design-H-1j_s0dhCw-unsplash.jpg'
+import hero from '../images/trend-K9pU2u0Z5WU-unsplash.jpg'
 
 
 
@@ -37,25 +37,25 @@ const Hero = () => {
                 </div>
             </div>
             <div className="cream__bg">
-                <div className="cream_nav">
-                    <ul>
-                        <li onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
-                            Eng 
-                            {showDropdown && (
-                                <ul className="dropdown">
-                                    <li>Swa</li>
-                                    <li>Ar</li>
-                                    <li>Es</li>
-                                </ul>
+                <ul className="cream_nav">
+                    <li id="down" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+                        Eng <IonIcon id="ion" icon={chevronDownOutline} />
+                        {showDropdown && (
+                            <ul className="dropdown">
+                                <li>Swa</li>
+                                <li>Ar</li>
+                                <li>Es</li>
+                            </ul>
                             )}
-                        </li>
-                        <li><IonIcon icon={bagOutline} /></li>
-                    </ul>
-                </div>
+                    </li>
+                    <li>
+                        <IonIcon icon={bagOutline} />
+                    </li>
+                </ul>
                 <div className="hero_image_cont">
                     <div className="box"></div>
                     <div className="image">
-                        {/* <img src={hero} alt="hero" /> */}
+                        <img src={hero} alt="hero" />
                     </div>
                     <Button> Watch video <IonIcon icon={playCircle} /></Button>
                 </div>

@@ -1,4 +1,6 @@
-
+$green: rgb(11, 53, 49);
+$gold: rgb(255, 190, 11);
+$cream: rgb(250, 237, 205);
 
 
 *{
@@ -26,20 +28,23 @@ ion-icon{
 
 .hero__container{
     width: 100%;
-    height: 100dvh;
+    height: 98dvh;
     display: flex;
     align-items: center;
 
     .green__bg{
         height: 100%;
-        width: 60%;
+        width: 67%;
         position: relative;
+        background: $green;
+        color: #fff;
 
         .green_nav{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-inline-start: 2.5rem;
+            padding-inline: 2.5rem;
+            
             // position: absolute;
             // top: 0;
             // left: 0;
@@ -65,17 +70,22 @@ ion-icon{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                gap: 1rem;
+                gap: 2rem;
 
                 li{
                     list-style-type: none;
                     font-weight: 600;
                     font-size: .9rem;
+                    cursor: pointer;
+                    &:hover{
+                        transition: color .05s ease;
+                        color: $gold;
+                    }
                 }
             }
         }
         .green_hero_content{
-            border: 1px solid red;
+            // border: 1px solid red;
             width: 100%;
             height: 80%;
             display: flex;
@@ -90,7 +100,7 @@ ion-icon{
                 width: 70%;
 
                 span{
-                    color: goldenrod;
+                    color: $gold;
                 }
             }
             p{
@@ -103,6 +113,72 @@ ion-icon{
                 background: goldenrod;
                 font-size: 1.2rem; 
                 color: #fff;
+            }
+        }
+    }
+    .cream__bg{
+        background: $cream;
+        width: 33%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: flex-end;
+
+        .cream_nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.6rem;
+            padding-inline-end: 4rem;
+            padding-block: 1rem;
+            :nth-last-child(1){
+                font-size: 1.5rem;
+            }
+            #down{
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                #ion{
+                    font-size: .8rem;
+                }
+            }
+
+            li{
+                list-style-type: none;
+                font-size: 1rem;
+                font-weight: 600;
+                // padding-block: 2rem;
+                &:hover{
+                    transition: color .05s ease;
+                    color: $gold;
+                }
+                
+            }
+        }
+        .hero_image_cont{
+            // border: 1px solid red;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            padding-inline-end: 3rem;
+            position: relative;
+
+            .image{
+                width: 38rem;
+                // border: 1px solid blue;
+                height: 25rem;
+                border-radius: 15px;
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 7px;
+                }
+                
             }
         }
     }
