@@ -31,7 +31,7 @@ const Hero = () => {
                     </ul>
                 </div>
                 <div className="green_hero_content">
-                    <h3><span>Interio</span> The Modern art of simplicity.</h3>
+                    <h3><span>Interio</span> The Modern <br /> art of simplicity.</h3>
                     <p>We are tending to the thousands of details it takes to create a custom home tailored to your lifestyle.</p>
                     <Button className="btn hero-btn">Explore More <IonIcon icon={arrowForwardSharp}/></Button>
                 </div>

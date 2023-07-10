@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Poppins:wght@400;600;700&display=swap');
+
 $green: rgb(11, 53, 49);
 $gold: rgb(255, 190, 11);
 $cream: rgb(250, 237, 205);
@@ -10,8 +12,16 @@ $cream: rgb(250, 237, 205);
 
 html{
     font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'Caprasimo', cursive;
+	font-weight: 400;	
 button{
     cursor: pointer;
     border: none;
@@ -83,7 +93,7 @@ ion-icon{
                 }
                 h3{
                     font-size: 1.2rem;
-                    font-weight: 600;
+                 
                 }
             }
 
@@ -117,7 +127,6 @@ ion-icon{
 
             h3{
                 font-size: 4rem;
-                font-weight: 600;
                 width: 70%;
 
                 span{
@@ -240,7 +249,6 @@ ion-icon{
     .cont{
         h5{
             font-size: 1.2rem;
-            font-weight: 600;
             padding-block-end: 1rem;
         }
         p{
