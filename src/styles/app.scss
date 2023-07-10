@@ -15,9 +15,30 @@ html{
 button{
     cursor: pointer;
     border: none;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    padding: .3rem .1rem .3rem 1rem;
+    // margin-block-start: 1rem;
+    // justify-content: space-between;
+    ion-icon{
+        // background: #fff;
+        font-size: 1.5rem;
+        // height: 100%;
+        // width: 100%;
+        margin-inline-start: .5rem;
+    }
+    
 }
-
+.btn{
+    background: $gold;
+    margin-block-start: 1rem;
+    &:hover{
+        transition: all .05s ease;
+        color: $green;
+        background: $cream;
+    }
+}
 ion-icon{
     cursor: pointer;
 }
@@ -108,12 +129,17 @@ ion-icon{
                 font-weight: 600;
                 padding-block: 1.2rem;
             }
-            #hero-btn{
-                padding: .2rem 1rem;
-                background: goldenrod;
-                font-size: 1.2rem; 
-                color: #fff;
+            .hero-btn{
+    
+                background: $gold;
+                margin-block-start: 1rem;
+                &:hover{
+                    transition: all .05s ease;
+                    color: $green;
+                    background: $cream;
+                }
             }
+            
         }
     }
     .cream__bg{
@@ -180,6 +206,195 @@ ion-icon{
                 }
                 
             }
+            .watch-btn{
+                background: #fff;
+                margin-block-start: -1rem;
+                &:hover{
+                    background: $gold;
+                    transition: all .05s ease;
+                    color: $green; 
+                }
+            }
+        }
+    }
+}
+
+
+/*
+**icons
+*/
+
+.icon{
+    width: 19rem;
+    height: 7rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.3rem;
+    // border: 1px solid red;
+    img{
+        width: 3rem;
+        height: 3rem;
+        color: $green;
+    }
+    .cont{
+        h5{
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding-block-end: 1rem;
+        }
+        p{
+            font-weight: 600;
+            font-size: .8rem;
+            opacity: .7;
+        }
+    }
+}
+.icons{
+    margin: 2rem 1rem;
+    .heading{
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        width: 20rem;
+        .dash{
+            width: 5rem;
+            height: .1rem;
+            background: $green;
+        }
+    }
+    .icons_container{
+        padding-block-start: 1.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+/*
+**Awards
+*/
+
+.awards_container{
+    display: flex;
+    align-items: center;
+    width: 100dvw;
+    height: 25rem;
+    // padding: .5rem 3rem;
+    .gallery{
+        height: 100%;
+        width: 40dvw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        // border: 1px solid red;
+        .large{
+            height: 25rem;
+            object-fit: cover;
+            width: 20dvw;
+            border-radius: 7px;
+        }
+        .right{
+            img{
+                width: 20dvw;
+                height: 15rem;
+                object-fit: cover;
+                border-radius: 7px;
+            }
+            .review{
+                width: 23dvw;
+                background: $cream;
+                margin-inline-start: -3rem;
+                height: 9rem;
+                margin-block-start: 1rem;
+                padding: 1rem;
+                border-radius: 7px;
+                .top{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 1rem;
+                    .dash{
+                        height: 3.5rem;
+                        width: .1rem;
+                        background: $green;
+                    }
+                    p{
+                        font-size: .8rem;
+                        font-weight: 600;
+                        opacity: .7;
+                    }
+                }
+                .bottom{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-block-start: 1rem;
+                    .left{
+                        display: inline-flex;
+                        align-items: center;
+                        gap: .8rem;
+                        img{
+                            width: 3rem;
+                            height: 3rem;
+                            object-fit: cover;
+                        }
+                        span{
+                            font-weight: 600;
+                            font-size: .9rem;
+                        }
+                    }
+                    .right{
+                        display: inline-flex;
+                        align-items: flex-end;
+                        flex-direction: column;
+                        .star ion-icon{
+                            color: $gold;
+                        }
+                        h5{
+                            font-size: .9rem;
+                            opacity: .7;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    .content{
+        // border: 1px solid red;
+        margin-inline: 4rem;
+        padding: 1rem 3rem 1rem 1.5rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        h3{
+            font-size: 1.8rem;
+            width: 25rem;
+            span{
+                color: $green;
+            }
+        }
+        p{
+            padding-block: 1.2rem;
+            font-size: .9rem;
+            font-weight: 600;
+            opacity: .7;
+            padding-inline-end: 3rem;
+        }
+        img{
+            width: 3rem;
+            height: 3rem;
+            object-fit: cover;
+        }
+        h4{
+            padding-block: 1rem;
+            color: $green;
         }
     }
 }

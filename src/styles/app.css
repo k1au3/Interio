@@ -10,7 +10,26 @@ html {
 button {
   cursor: pointer;
   border: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  padding: 0.3rem 0.1rem 0.3rem 1rem;
+}
+button ion-icon {
+  font-size: 1.5rem;
+  -webkit-margin-start: 0.5rem;
+          margin-inline-start: 0.5rem;
+}
+
+.btn {
+  background: rgb(255, 190, 11);
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+}
+.btn:hover {
+  transition: all 0.05s ease;
+  color: rgb(11, 53, 49);
+  background: rgb(250, 237, 205);
 }
 
 ion-icon {
@@ -93,11 +112,15 @@ ion-icon {
   font-weight: 600;
   padding-block: 1.2rem;
 }
-.hero__container .green__bg .green_hero_content #hero-btn {
-  padding: 0.2rem 1rem;
-  background: goldenrod;
-  font-size: 1.2rem;
-  color: #fff;
+.hero__container .green__bg .green_hero_content .hero-btn {
+  background: rgb(255, 190, 11);
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+}
+.hero__container .green__bg .green_hero_content .hero-btn:hover {
+  transition: all 0.05s ease;
+  color: rgb(11, 53, 49);
+  background: rgb(250, 237, 205);
 }
 .hero__container .cream__bg {
   background: rgb(250, 237, 205);
@@ -158,4 +181,193 @@ ion-icon {
   width: 100%;
   height: 100%;
   border-radius: 7px;
+}
+.hero__container .cream__bg .hero_image_cont .watch-btn {
+  background: #fff;
+  -webkit-margin-before: -1rem;
+          margin-block-start: -1rem;
+}
+.hero__container .cream__bg .hero_image_cont .watch-btn:hover {
+  background: rgb(255, 190, 11);
+  transition: all 0.05s ease;
+  color: rgb(11, 53, 49);
+}
+
+/*
+**icons
+*/
+.icon {
+  width: 19rem;
+  height: 7rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.3rem;
+}
+.icon img {
+  width: 3rem;
+  height: 3rem;
+  color: rgb(11, 53, 49);
+}
+.icon .cont h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  -webkit-padding-after: 1rem;
+          padding-block-end: 1rem;
+}
+.icon .cont p {
+  font-weight: 600;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.icons {
+  margin: 2rem 1rem;
+}
+.icons .heading {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  width: 20rem;
+}
+.icons .heading .dash {
+  width: 5rem;
+  height: 0.1rem;
+  background: rgb(11, 53, 49);
+}
+.icons .icons_container {
+  -webkit-padding-before: 1.4rem;
+          padding-block-start: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/*
+**Awards
+*/
+.awards_container {
+  display: flex;
+  align-items: center;
+  width: 100dvw;
+  height: 25rem;
+}
+.awards_container .gallery {
+  height: 100%;
+  width: 40dvw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.awards_container .gallery .large {
+  height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 20dvw;
+  border-radius: 7px;
+}
+.awards_container .gallery .right img {
+  width: 20dvw;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 7px;
+}
+.awards_container .gallery .right .review {
+  width: 23dvw;
+  background: rgb(250, 237, 205);
+  -webkit-margin-start: -3rem;
+          margin-inline-start: -3rem;
+  height: 9rem;
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  padding: 1rem;
+  border-radius: 7px;
+}
+.awards_container .gallery .right .review .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.awards_container .gallery .right .review .top .dash {
+  height: 3.5rem;
+  width: 0.1rem;
+  background: rgb(11, 53, 49);
+}
+.awards_container .gallery .right .review .top p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0.7;
+}
+.awards_container .gallery .right .review .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-padding-before: 1rem;
+          padding-block-start: 1rem;
+}
+.awards_container .gallery .right .review .bottom .left {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.awards_container .gallery .right .review .bottom .left img {
+  width: 3rem;
+  height: 3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.awards_container .gallery .right .review .bottom .left span {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.awards_container .gallery .right .review .bottom .right {
+  display: inline-flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.awards_container .gallery .right .review .bottom .right .star ion-icon {
+  color: rgb(255, 190, 11);
+}
+.awards_container .gallery .right .review .bottom .right h5 {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+.awards_container .content {
+  margin-inline: 4rem;
+  padding: 1rem 3rem 1rem 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.awards_container .content h3 {
+  font-size: 1.8rem;
+  width: 25rem;
+}
+.awards_container .content h3 span {
+  color: rgb(11, 53, 49);
+}
+.awards_container .content p {
+  padding-block: 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.7;
+  -webkit-padding-end: 3rem;
+          padding-inline-end: 3rem;
+}
+.awards_container .content img {
+  width: 3rem;
+  height: 3rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.awards_container .content h4 {
+  padding-block: 1rem;
+  color: rgb(11, 53, 49);
 }/*# sourceMappingURL=app.css.map */

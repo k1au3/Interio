@@ -33,7 +33,7 @@ const Hero = () => {
                 <div className="green_hero_content">
                     <h3><span>Interio</span> The Modern art of simplicity.</h3>
                     <p>We are tending to the thousands of details it takes to create a custom home tailored to your lifestyle.</p>
-                    <Button id="hero-btn">Explore More <IonIcon icon={arrowForwardSharp}/></Button>
+                    <Button className="btn hero-btn">Explore More <IonIcon icon={arrowForwardSharp}/></Button>
                 </div>
             </div>
             <div className="cream__bg">
@@ -57,7 +57,7 @@ const Hero = () => {
                     <div className="image">
                         <img src={hero} alt="hero" />
                     </div>
-                    <Button> Watch video <IonIcon icon={playCircle} /></Button>
+                    <Button className="watch-btn"> Watch video <IonIcon icon={playCircle} /></Button>
                 </div>
             </div>
         </div>
