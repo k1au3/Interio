@@ -45,7 +45,7 @@ const Awards = () => {
                     We are a residential Interior design firm located in Hurlingham. Our boutique studio offers more than 20 years experience in custom renovations, new homw finishes and furniture designs. We can help with all aspects of your project from design concepts and putting together the construction team, to sourcing furniture and art. While also tending to the thousands of details it takes to create a custom home tailored to your lifestyle.
                 </p>
                 <img src={signature} alt="signature" />
-                <h4>Jennie Wambui, CEO</h4>
+                <h4>Yvonne Cheptoo, CEO</h4>
                 <Button className="btn">Read More <IonIcon icon={arrowForward} /></Button>
             </aside>
         </div>
